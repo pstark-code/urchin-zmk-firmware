@@ -1,8 +1,8 @@
 manifest:
   remotes:
     # zmk official
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    # - name: zmkfirmware
+    #   url-base: https://github.com/zmkfirmware
       # bravekarma
     - name: caksoylar
       url-base: https://github.com/caksoylar
@@ -12,16 +12,22 @@ manifest:
       # nice-view-gem
     - name: m165437
       url-base: https://github.com/M165437
+    - name: krikun98
+      url-base: https://github.com/krikun98
   projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: v0.3.0
-      import: app/west.yml
+    # - name: zmk
+    #   remote: zmkfirmware
+    #   revision: v0.3.0
+    #   import: app/west.yml
     - name: urchin-zmk-module
       remote: duckyb
       revision: main
     - name: nice-view-gem
       remote: m165437
       revision: main
+    - name: zmk
+      remote: krikun98
+      revision: mouse-pr 
+      import: app/west.yml
   self:
     path: config
